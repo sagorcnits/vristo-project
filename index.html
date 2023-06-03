@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vristo</title>
+    <link rel="stylesheet" href="./dist/styles/output.css" />
+
+    <!-- booostrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- boostrap icons -->
+
+    <!-- fontwsome icon -->
+    <script
+      src="https://kit.fontawesome.com/236e7d5b35.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fontwsome icon -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <!-- gooogle font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&family=Sora:wght@300&family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+    <!-- gooogle font -->
+  </head>
+  <body class="bg-[#F8F8F8] font-Nunito text-text-color">
+    <!-- navber F8F8F8-->
+    <nav class="navber">
+      <div class="mx-4 text-text-color">
+        <a class="text-[25px]" href="#"
+          ><i class="fa-solid fa-bars-staggered"></i
+        ></a>
+      </div>
+      <div class="container flex justify-end md:justify-between">
+        <!-- search ber -->
+        <div class="md:flex hidden">
+          <div class="navber-icon">
+            <a class="text-[25px]" href="#"
+              ><i class="fa-regular fa-calendar"></i
+            ></a>
+          </div>
+          <div class="navber-icon">
+            <a class="text-[25px]" href="#"
+              ><i class="fa-regular fa-pen-to-square"></i
+            ></a>
+          </div>
+          <div class="navber-icon">
+            <a class="text-[25px]" href="#"
+              ><i class="fa-solid fa-comment"></i
+            ></a>
+          </div>
+          <div class="search-ber">
+            <span class="ml-5 text-text-color"
+              ><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <input
+                type="text"
+                placeholder="Search"
+                class="bg-transparent focus:outline-none ml-2"
+              />
+            </span>
+          </div>
+        </div>
+        <!-- search ber -->
+        <!-- profile -->
+        <div class="flex justify-between">
+          <div class="md:flex hidden">
+            <div class="navber-icon">
+              <a class="text-[25px]" href="#"
+                ><i class="fa-solid fa-laptop"></i
+              ></a>
+            </div>
+            <div class="navber-icon">
+              <a href="#"
+                ><img
+                  class="w-[80%] block m-auto"
+                  src="image/country-logo.png"
+                  alt="country"
+              /></a>
+            </div>
+            <div class="navber-icon">
+              <a class="text-[25px]" href="#"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="navber-icon">
+            <a class="text-[25px]" href="#"
+              ><i class="fa-regular fa-bell"></i
+            ></a>
+          </div>
+          <div class="navber-icon">
+            <a class="text-[25px]" href="#"
+              ><img src="image/profile-logo.png" alt="profile"
+            /></a>
+          </div>
+        </div>
+        <!-- profile -->
+      </div>
+    </nav>
+
+    <!-- navber -->
+
+    <!-- sidber -->
+    <section class="sidber-section">
+      <div class="sidber scroll-ber">
+        <!-- company name  -->
+        <div class="software-name">
+          <span class="ml-4">
+            <img
+              class="w-[28%] sm:inline-flex hidden mr-4"
+              src="image/vristo-logo.png"
+              alt="tail"
+            />VRISTO</span
+          >
+          <span class="text-[12px]">
+            <a href="#"><i class="fa-solid fa-angles-left"></i></a
+          ></span>
+        </div>
+        <!-- company name  -->
+
+        <!-- dashboard -->
+        <div class="sidber-input bg-input" onclick="dropdown()">
+          <p class="text-gray-500">
+            <a href="#"><i class="fa-solid fa-house-chimney"></i></a>
+          </p>
+
+          <div class="flex justify-between items-center w-full">
+            <span class="text-[15px] ml-4">Dashboard</span>
+            <span class="text-sm rotate-0" id="arrow">
+              <i class="bi bi-chevron-down"></i>
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="text-left text-sm mt-2 w-3/4 mx-auto text-black"
+          id="submenu"
+        >
+          <p class="dashboard">
+            <a href="#"
+              ><span><i class="fa-solid fa-minus fa-xs"></i></span> Sales</a
+            >
+          </p>
+          <p class="dashboard">
+            <a href="#"
+              ><span><i class="fa-solid fa-minus fa-xs"></i></span> Analytics</a
+            >
+          </p>
+          <p class="dashboard">
+            <a href="#"
+              ><span><i class="fa-solid fa-minus fa-xs"></i></span> Finance
+            </a>
+          </p>
+          <p class="dashboard">
+            <a href="#"
+              ><span><i class="fa-solid fa-minus fa-xs"></i></span> Crypto
+            </a>
+          </p>
+        </div>
+        <!-- dashbord -->
+        <!-- apps -->
+        <div class="sidber-input bg-input" onclick="dropapps()">
+          <div class="flex justify-between items-center w-full">
+            <span class="text-[15px]">Apps</span>
+            <span class="text-sm rotate-0" id="arrow-apps">
+              <i class="bi bi-chevron-down"></i>
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="text-left text-sm mt-2 w-3/4 mx-auto text-black"
+          id="apps-menu"
+        >
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"
+                ><i class="fa-solid fa-message"></i
+              ></span>
+              Chat</a
+            >
+          </p>
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"
+                ><i class="fa-solid fa-envelope-circle-check"></i
+              ></span>
+              Mailbox</a
+            >
+          </p>
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"
+                ><i class="fa-solid fa-clipboard-list"></i
+              ></span>
+              Todo List
+            </a>
+          </p>
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"
+                ><i class="fa-solid fa-clipboard"></i
+              ></span>
+              Notes
+            </a>
+          </p>
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"
+                ><i class="fa-solid fa-clipboard"></i
+              ></span>
+              Scrum board
+            </a>
+          </p>
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"
+                ><i class="fa-solid fa-location-dot"></i
+              ></span>
+              Contacts
+            </a>
+          </p>
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"
+                ><i class="fa-solid fa-circle-dollar-to-slot"></i
+              ></span>
+              Invoice
+            </a>
+          </p>
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"
+                ><i class="fa-regular fa-calendar-days"></i
+              ></span>
+              Calendar
+            </a>
+          </p>
+        </div>
+        <!-- apps -->
+        <!-- user interface -->
+
+        <div class="sidber-input bg-input" onclick="dropUser()">
+          <div class="flex justify-between items-center w-full">
+            <span class="text-[15px]">USER INTERFACE</span>
+            <span class="text-sm rotate-0" id="arrow-user">
+              <i class="bi bi-chevron-down"></i>
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="text-left text-sm mt-2 w-3/4 mx-auto text-black"
+          id="user-menu"
+        >
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"><i class="fa-solid fa-cube"></i></span>
+              Components</a
+            >
+          </p>
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"><i class="fa-solid fa-cube"></i></span>
+              Elements</a
+            >
+          </p>
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"
+                ><i class="fa-solid fa-chart-pie"></i
+              ></span>
+              Charts
+            </a>
+          </p>
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"
+                ><i class="fa-solid fa-clipboard"></i
+              ></span>
+              Widgets
+            </a>
+          </p>
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"
+                ><i class="fa-solid fa-clipboard"></i
+              ></span>
+              Font Icons
+            </a>
+          </p>
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"
+                ><i class="fa-solid fa-maximize"></i
+              ></span>
+              Drag and Drop
+            </a>
+          </p>
+        </div>
+
+        <!-- user interface -->
+
+        <!-- table forms -->
+        <div class="sidber-input bg-input" onclick="dropTable()">
+          <div class="flex justify-between items-center w-full">
+            <span class="text-[15px]">TABLE AND FORMS</span>
+            <span class="text-sm rotate-0" id="arrow-table">
+              <i class="bi bi-chevron-down"></i>
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="text-left text-sm mt-2 w-3/4 mx-auto text-black"
+          id="table-menu"
+        >
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"
+                ><i class="fa-solid fa-table-list"></i
+              ></span>
+              Tables</a
+            >
+          </p>
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"
+                ><i class="fa-solid fa-table-list"></i
+              ></span>
+              Data Tables</a
+            >
+          </p>
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"
+                ><i class="fa-regular fa-pen-to-square"></i
+              ></span>
+              Forms
+            </a>
+          </p>
+        </div>
+        <!-- table forms -->
+
+        <!-- user page -->
+        <div class="sidber-input bg-input" onclick="dropPage()">
+          <div class="flex justify-between items-center w-full">
+            <span class="text-[15px]">USER AND PAGES</span>
+            <span class="text-sm rotate-0" id="arrow-page">
+              <i class="bi bi-chevron-down"></i>
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="text-left text-sm mt-2 w-3/4 mx-auto text-black"
+          id="page-menu"
+        >
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"><i class="fa-solid fa-user"></i></span>
+              Users</a
+            >
+          </p>
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"
+                ><i class="fa-solid fa-table-list"></i
+              ></span>
+              Pages</a
+            >
+          </p>
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"><i class="fa-solid fa-lock"></i></span>
+              Authentication
+            </a>
+          </p>
+        </div>
+        <!-- user page -->
+        <!-- support -->
+        <div class="sidber-input bg-input" onclick="dropSupport()">
+          <div class="flex justify-between items-center w-full">
+            <span class="text-[15px]">SUPPORTS</span>
+            <span class="text-sm rotate-0" id="arrow-support">
+              <i class="bi bi-chevron-down"></i>
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="text-left text-sm mt-2 w-3/4 mx-auto text-black"
+          id="support-menu"
+        >
+          <p class="chat-drop">
+            <a href="#" class="hover:text-text-hover"
+              ><span class="pr-[10px]"><i class="fa-solid fa-user"></i></span>
+              Documentation</a
+            >
+          </p>
+        </div>
+        <!-- support -->
+
+        <hr class="w-full text-gray-600 mt-[12px]" />
+
+        <div class="sidber-input">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <a href="#"><span class="text-[15px] ml-4">Loguot</span></a>
+        </div>
+      </div>
+    </section>
+    <!-- sidber -->
+    <!-- profit dashboard -->
+    <section class="section-sidber mb:pb-0">
+      <div class="pt-8 pb-8 px-4">
+        <h1><span class="text-blue-500">Dashboard </span>/ sales</h1>
+
+        <div class="revenue">
+          <div class="total-profit md:col-span-3">
+            <ul class="flex justify-between">
+              <li>Revenue</li>
+              <li class="text-[20px]">
+                <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+              </li>
+            </ul>
+            <h1 class="pt-4 pb-4">
+              Total Profit <span class="text-blue-500 ml-1"> $10,840</span>
+            </h1>
+
+            <div class="h-[90%] w-[100%] rounded-lg">
+              <div id="profit" class="md:h-[400px] rounded-lg"></div>
+            </div>
+          </div>
+          <div
+            class="sales-cetagory md:col-span-1 bg-white mt-6 md:mt-0 rounded-lg"
+          >
+            <h1 class="pt-4 pl-4">Sales By Cetagory</h1>
+            <div class="h-[70%] w-[100%]">
+              <div id="piechart" class="md:h-[400px]"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- profite dashboard -->
+    <!-- daily sales -->
+    <section class="daily-sales md:mt-10 px-4 rounded-lg pb-[40px]">
+      <div class="md:grid md:grid-cols-3 md:gap-10">
+        <div class="sales h-[350px] bg-white p-6 mt-10 rounded-lg">
+          <ul class="flex justify-between pb-10">
+            <span
+              ><h1>Daily Sales</h1>
+              <p class="text-sm text-text-color">
+                Go to columns for details
+              </p></span
+            >
+
+            <div class="navber-icon bg-[#E2A03F]">
+              <a class="text-[25px] text-yellow-400" href="#"
+                ><i class="fa-solid fa-dollar-sign"></i
+              ></a>
+            </div>
+          </ul>
+          <div class="flex justify-around pt-8 sales-prog">
+            <div class="w-4 h-[150px] bg-[#E0E6ED] sale"></div>
+            <div class="w-4 h-[150px] bg-[#E0E6ED] sale1"></div>
+            <div class="w-4 h-[150px] bg-[#E0E6ED] sale2"></div>
+            <div class="w-4 h-[150px] bg-[#E0E6ED] sale3"></div>
+            <div class="w-4 h-[150px] bg-[#E0E6ED] sale4"></div>
+            <div class="w-4 h-[150px] bg-[#E0E6ED] sale5"></div>
+            <div class="w-4 h-[150px] bg-[#E0E6ED] sale6"></div>
+          </div>
+        </div>
+        <div class="sales h-[350px] bg-white p-6 mt-10 rounded-lg">
+          <ul class="flex justify-between pb-10">
+            <span><h1>Summary</h1> </span>
+            <span
+              ><a href="#"><i class="fa-solid fa-ellipsis"></i></a
+            ></span>
+          </ul>
+
+          <ul>
+            <div class="income flex items-center">
+              <div class="navber-icon bg-[#b224ef]">
+                <a class="text-[25px] text-white" href="#"
+                  ><i class="fa-solid fa-inbox"></i
+                ></a>
+              </div>
+              <li class="flex justify-between html">
+                <span>Income</span>
+                <span>$92,600</span>
+              </li>
+            </div>
+            <div class="profit mt-4 flex items-center">
+              <div class="navber-icon bg-[#E8F7EF]">
+                <a class="text-[25px] text-green-300" href="#"
+                  ><i class="fa-solid fa-tag"></i
+                ></a>
+              </div>
+              <li class="flex justify-between html">
+                <span>Profit</span>
+                <span>$92,600</span>
+              </li>
+            </div>
+            <div class="expenses mt-4 flex items-center">
+              <div class="navber-icon bg-[#ffd209]">
+                <a class="text-[25px] text-white" href="#"
+                  ><i class="fa-regular fa-window-maximize"></i
+                ></a>
+              </div>
+              <li class="flex justify-between html">
+                <span>Expenses</span>
+                <span>$92,600</span>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="sales h-[350px] bg-white p-6 mt-10 rounded-lg">
+          <ul class="flex justify-between pb-10">
+            <div
+              class="bg-[#E8F7EF] w-[40px] h-[40px] rounded-full flex justify-center items-center"
+            >
+              <a class="text-[25px] text-green-300" href="#"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </div>
+
+            <span
+              ><h1>31,300</h1>
+              <p class="text-sm text-text-color">Total Orders</p></span
+            >
+          </ul>
+          <div>
+            <div id="sale-chart"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- daily sales -->
+    <!-- Recent Activities -->
+    <section id=" activities ">
+      <div
+        class="md:grid md:grid-cols-3 md:gap-[30px] px-4 pt-[40px] text-text-color"
+      >
+        <!-- recent -->
+        <div class="h-[480px] py-4 px4 bg-white rounded-lg">
+          <h1 class="py-4 px-4">Recent Activities</h1>
+          <div class="recent overflow-y-auto h-[280px] px-4">
+            <ul class="flex justify-between my-4">
+              <li>Updated Server Logs</li>
+              <li class="text-text-color text-[14px]">Just Now</li>
+            </ul>
+            <ul class="flex justify-between my-4">
+              <li>Send Mail to HR and Admin</li>
+              <li class="text-text-color text-[14px]">2 min ago</li>
+            </ul>
+            <ul class="flex justify-between my-4">
+              <li>Backup Files EOD</li>
+              <li class="text-text-color text-[14px]">14:00</li>
+            </ul>
+            <ul class="flex justify-between my-4">
+              <li>Collect documents from Sara</li>
+              <li class="text-text-color text-[14px]">16:00</li>
+            </ul>
+            <ul class="flex justify-between my-4">
+              <li>Conference call with Marketing Manager.</li>
+              <li class="text-text-color text-[14px]">17:00</li>
+            </ul>
+            <ul class="flex justify-between my-4">
+              <li>Rebooted Server</li>
+              <li class="text-text-color text-[14px]">17:00</li>
+            </ul>
+            <ul class="flex justify-between my-4">
+              <li>Updated Server Logs</li>
+              <li class="text-text-color text-[14px]">Just Now</li>
+            </ul>
+            <ul class="flex justify-between my-4">
+              <li>Updated Server Logs</li>
+              <li class="text-text-color text-[14px]">Just Now</li>
+            </ul>
+            <ul class="flex justify-between my-4">
+              <li>Updated Server Logs</li>
+              <li class="text-text-color text-[14px]">Just Now</li>
+            </ul>
+            <ul class="flex justify-between my-4">
+              <li>Updated Server Logs</li>
+              <li class="text-text-color text-[14px]">Just Now</li>
+            </ul>
+            <ul class="flex justify-between my-4">
+              <li>Updated Server Logs</li>
+              <li class="text-text-color text-[14px]">Just Now</li>
+            </ul>
+            <ul class="flex justify-between my-4">
+              <li>Updated Server Logs</li>
+              <li class="text-text-color text-[14px]">Just Now</li>
+            </ul>
+            <ul class="flex justify-between my-4">
+              <li>Updated Server Logs</li>
+              <li class="text-text-color text-[14px]">Just Now</li>
+            </ul>
+            <ul class="flex justify-between my-4">
+              <li>Updated Server Logs</li>
+              <li class="text-text-color text-[14px]">Just Now</li>
+            </ul>
+            <ul class="flex justify-between my-4">
+              <li>Updated Server Logs</li>
+              <li class="text-text-color text-[14px]">Just Now</li>
+            </ul>
+            <ul class="flex justify-between my-4">
+              <li>Updated Server Logs</li>
+              <li class="text-text-color text-[14px]">Just Now</li>
+            </ul>
+            <ul class="flex justify-between my-4">
+              <li>Updated Server Logs</li>
+              <li class="text-text-color text-[14px]">Just Now</li>
+            </ul>
+            <ul class="flex justify-between my-4">
+              <li>Updated Server Logs</li>
+              <li class="text-text-color text-[14px]">Just Now</li>
+            </ul>
+          </div>
+          <div class="py-8">
+            <hr class="pb-8" />
+            <div class="text-center">
+              <a href="#">
+                <span>View All<i class="fa-solid fa-arrow-right pl-2"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- recent -->
+        <!-- trnasition -->
+        <div class="h-[480px] py-4 px4 bg-white rounded-lg mt-10 md:mt-0">
+          <ul class="flex justify-between px-4 pt-4">
+            <li>Transactions</li>
+            <li>
+              <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+            </li>
+          </ul>
+
+          <div class="px-4 flex items-center mt-6">
+            <span
+              class="w-[45px] h-[40px] flex justify-center items-center rounded-md bg-[#DDF5F0] text-[#00AB55] text-[19px]"
+              >SP</span
+            >
+            <div class="flex justify-between w-[100%] px-4">
+              <ul>
+                <li>Shaun Park</li>
+                <li class="text-text-color text-[14px]">10 Jan 1:00PM</li>
+              </ul>
+
+              <span class="text-[#00AB55] text-[19px]">+$36.11</span>
+            </div>
+          </div>
+
+          <div class="px-4 flex items-center mt-6">
+            <span
+              class="w-[45px] h-[40px] flex justify-center items-center rounded-md bg-[#FFF9ED] text-[19px]"
+              ><img src="image/cash-withdraw.png" alt="cash-withdraw"
+            /></span>
+            <div class="flex justify-between w-[100%] px-4">
+              <ul>
+                <li>Cash withdrawal</li>
+                <li class="text-text-color text-[14px]">04 Jan 1:00PM</li>
+              </ul>
+
+              <span class="text-[#E7515A] text-[19px]">-$16.44</span>
+            </div>
+          </div>
+
+          <div class="px-4 flex items-center mt-6">
+            <span
+              class="w-[45px] h-[40px] flex justify-center items-center rounded-md bg-[#FFF5F5] text-[19px]"
+              ><img src="image/amy-diaz.png" alt="amy-diaz"
+            /></span>
+            <div class="flex justify-between w-[100%] px-4">
+              <ul>
+                <li>Amy Diaz</li>
+                <li class="text-text-color text-[14px]">10 Jan 1:00PM</li>
+              </ul>
+
+              <span class="text-[#00AB55] text-[19px]">+$66.44</span>
+            </div>
+          </div>
+
+          <div class="px-4 flex items-center mt-6">
+            <span
+              class="w-[45px] h-[40px] flex justify-center items-center rounded-md bg-[#EBE4F7] text-[#805DCA] text-[19px]"
+              >N</span
+            >
+            <div class="flex justify-between w-[100%] px-4">
+              <ul>
+                <li>Netflix</li>
+                <li class="text-text-color text-[14px]">04 Jan 1:00PM</li>
+              </ul>
+
+              <span class="text-[#E7515A] text-[19px]">-$32.00</span>
+            </div>
+          </div>
+
+          <div class="px-4 flex items-center mt-6">
+            <span
+              class="w-[45px] h-[40px] flex justify-center items-center rounded-md bg-[#E7F7FF] text-[#2196F3] text-[19px]"
+              >DA</span
+            >
+            <div class="flex justify-between w-[100%] px-4">
+              <ul>
+                <li>Daisy Anderson</li>
+                <li class="text-text-color text-[14px]">10 Jan 1:00PM</li>
+              </ul>
+
+              <span class="text-[#00AB55] text-[19px]">+$10.08</span>
+            </div>
+          </div>
+
+          <div class="px-4 flex items-center mt-6">
+            <span
+              class="w-[45px] h-[40px] flex justify-center items-center rounded-md bg-[#EAF1FF] text-[19px]"
+              ><img src="image/electry.png" alt="electry"
+            /></span>
+            <div class="flex justify-between w-[100%] px-4">
+              <ul>
+                <li>Electricity Bill</li>
+                <li class="text-text-color text-[14px]">04 Jan 1:00PM</li>
+              </ul>
+
+              <span class="text-[#E7515A] text-[19px]">-$22.00</span>
+            </div>
+          </div>
+        </div>
+        <!-- trnasition -->
+        <!-- wallet balance -->
+        <div class="h-[480px] px4 bg-white rounded-[10px] mt-10 md:mt-0">
+          <!-- profile -->
+          <div class="bg-grad">
+            <div class="flex justify-between items-center pb-8">
+              <div
+                class="flex bg-[#160F6B] px-2 py-1 text-[16px] rounded-full items-center"
+              >
+                <span
+                  ><img src="image/wallet-logo.png" alt="wallet-logo" />
+                </span>
+                <span class="pl-1">Alan Green</span>
+              </div>
+              <div
+                class="w-[35px] h-[35px] flex justify-center items-center rounded-md bg-[#0E1726] text-[22px]"
+              >
+                <a href="#"><i class="fa-regular fa-plus"></i></a>
+              </div>
+            </div>
+            <ul class="flex justify-between">
+              <li><a href="#">Wallet Balance</a></li>
+              <li><a href="#">$2953</a></li>
+            </ul>
+          </div>
+          <!-- profile -->
+          <!-- balance -->
+          <div
+            class="flex px-4 md:justify-evenly justify-center gap-4 md:gap-0"
+          >
+            <div
+              class="bg-white w-[150px] h-[100px] mt-[-40px] p-2 drop-shadow-lg rounded-lg"
+            >
+              <ul class="flex justify-between pb-7">
+                <li>Received</li>
+                <li class="text-green-500">
+                  <a href="#"><i class="bi bi-chevron-down"></i></a>
+                </li>
+              </ul>
+              <p
+                class="text-center p-1 rounded-lg bg-[#EBEDF2] cursor-pointer hover:bg-green-400 duration-700"
+              >
+                <a href="#">$97.99</a>
+              </p>
+            </div>
+            <div
+              class="bg-white w-[150px] h-[100px] mt-[-40px] p-2 drop-shadow-lg rounded-lg"
+            >
+              <ul class="flex justify-between pb-7">
+                <li>Spent</li>
+                <li class="text-red-500">
+                  <a href="#"><i class="bi bi-chevron-down"></i></a>
+                </li>
+              </ul>
+              <p
+                class="text-center p-1 rounded-lg bg-[#EBEDF2] cursor-pointer hover:bg-red-500 duration-700"
+              >
+                <a href="#">$97.99</a>
+              </p>
+            </div>
+          </div>
+          <!-- balance -->
+          <div
+            class="px-2 w-[120px] bg-[#0E1726] text-white text-center py-2 rounded-full mt-4 ml-4 balance hover:bg-blue-700 duration-700"
+          >
+            <ul>
+              <li><a href="#">Pending</a></li>
+            </ul>
+          </div>
+          <div class="px-4 pb-2 mt-2">
+            <ul class="flex justify-between py-2">
+              <li>Netflix</li>
+              <li>$ 13.85</li>
+            </ul>
+
+            <ul class="flex justify-between py-2">
+              <li>BlueHost VPN</li>
+              <li>$ 15.66</li>
+            </ul>
+
+            <div
+              class="flex px-4 md:justify-evenly justify-center gap-4 md:gap-1"
+            >
+              <div
+                class="bg-[#805DCA] w-[150px] h-[70px] p-2 drop-shadow-lg rounded-lg text-center text-white leading-8"
+              >
+                <p><a href="#"> View</a></p>
+                <p><a href="#"> Details</a></p>
+              </div>
+              <div
+                class="bg-[#00AB55] w-[150px] h-[70px] p-2 drop-shadow-lg rounded-lg text-center text-white leading-8"
+              >
+                <p><a href="#">View</a></p>
+                <p><a href="#">$29.51</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- wallet balance -->
+      </div>
+    </section>
+    <!-- recent activities -->
+    <!-- recent order -->
+    <section class="mt-[30px] px-4 text-text-color">
+      <div class="md:grid md:grid-cols-2 md:gap-8">
+        <div class="h-[470px] bg-white px-4">
+          <h1 class="py-8">Recent Orders</h1>
+          <div class="h-[380px] overflow-auto">
+            <table class="border-collapse border-slate-500 px-4 w-[100%]">
+              <thead>
+                <tr class="bg-[#E5E7EB]">
+                  <th class="py-4">Customer</th>
+                  <th class="py-4">Product</th>
+                  <th class="py-4">Invoice</th>
+                  <th class="py-4">Price</th>
+                  <th class="py-4">Status</th>
+                </tr>
+              </thead>
+
+              <tbody class="divide-y">
+                <tr>
+                  <td class="md:px-12 py-4">
+                    <img src="image/table-logo.png" alt="tabale" />
+                    Luke
+                  </td>
+                  <td class="px-6 py-4 text-[#4361EE]">Headphone</td>
+                  <td class="text-center px-6 py-4">#46894</td>
+                  <td class="text-center px-6 py-4">$56.07</td>
+                  <td class="text-center px-6 py-4">
+                    <span class="bg-[#00AB55] py-1 px-2 rounded-md text-white"
+                      >Paid</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:px-12 py-4">
+                    <img
+                      class="inline-block"
+                      src="image/table-male.png"
+                      alt="table-logo"
+                    />
+                    luke
+                  </td>
+                  <td class="text-center px-6 py-4 text-[#2196F3]">
+                    Nike Sport
+                  </td>
+                  <td class="text-center px-6 py-4">#46894</td>
+                  <td class="text-center px-6 py-4">$56.07</td>
+                  <td class="text-center px-6 py-4">
+                    <span class="bg-[#805DCA] py-1 px-2 rounded-md text-white"
+                      >Shipped</span
+                    >
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="md:px-12 py-4">
+                    <img
+                      class="inline-block"
+                      src="image/table-logo.png"
+                      alt="table-logo"
+                    />
+                    Luke
+                  </td>
+                  <td class="text-center px-6 py-4 text-[#E2A03F]">
+                    Sunglasses
+                  </td>
+                  <td class="text-center px-6 py-4">#46894</td>
+                  <td class="text-center px-6 py-4">$56.07</td>
+                  <td class="text-center px-6 py-4">
+                    <span class="bg-[#00AB55] py-1 px-2 rounded-md text-white"
+                      >Paid
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:px-12 py-4">
+                    <img
+                      class="inline-block"
+                      src="image/table-male.png"
+                      alt="table-logo"
+                    />
+                    luke
+                  </td>
+                  <td class="text-center px-6 py-4 text-[#E7515A]">Sport</td>
+                  <td class="text-center px-6 py-4">#46894</td>
+                  <td class="text-center px-6 py-4">$56.07</td>
+                  <td class="text-center px-6 py-4">
+                    <span class="bg-[#805DCA] py-1 px-2 rounded-md text-white"
+                      >Shipped</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="md:px-12 py-4">
+                    <img
+                      class="inline-block"
+                      src="image/table-logo.png"
+                      alt="table-logo"
+                    />
+                    Luke
+                  </td>
+                  <td class="text-center px-6 py-4 text-[#805DCA]">Speakers</td>
+                  <td class="text-center px-6 py-4">#46894</td>
+                  <td class="text-center px-6 py-4">$56.07</td>
+                  <td class="text-center px-6 py-4">
+                    <span class="bg-[#00AB55] py-1 px-2 rounded-md text-white"
+                      >Paid
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="h-[470px] bg-white px-4 mt-[20px] md:mt-0">
+          <h1 class="py-8">Top Selling Product</h1>
+          <div class="h-[380px] overflow-auto">
+            <table class="border-collapse border-slate-500 px-4 w-[100%]">
+              <thead>
+                <tr class="bg-[#E5E7EB]">
+                  <th class="py-4 pr-4">Product</th>
+                  <th class="py-4">Price</th>
+                  <th class="py-4">Discount</th>
+                  <th class="py-4">Sold</th>
+                  <th class="py-4">Source</th>
+                </tr>
+              </thead>
+
+              <tbody class="divide-y px-4">
+                <tr>
+                  <td class="md:px-12 py-4">
+                    <img
+                      class="inline-block"
+                      src="image/headphone.png"
+                      alt="table-logo"
+                    />
+                    luke
+                  </td>
+                  <td class="text-center px-6 py-4">$168.09</td>
+                  <td class="text-center px-6 py-4">$60.09</td>
+                  <td class="text-center px-6 py-4">170</td>
+                  <td class="text-center px-6 py-4">
+                    <span class="text-[#E7515A]"
+                      ><i class="fa-solid fa-share"></i>
+                      Direct
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="md:px-12 py-4">
+                    <img
+                      class="inline-block"
+                      src="image/headphone.png"
+                      alt="table-logo"
+                    />
+                    luke
+                  </td>
+                  <td class="text-center px-6 py-4">$126.04</td>
+                  <td class="text-center px-6 py-4">$47.09</td>
+                  <td class="text-center px-6 py-4">130</td>
+                  <td class="text-center px-6 py-4">
+                    <span class="text-[#00AB55]"
+                      ><i class="fa-solid fa-share"></i>
+                      Google
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="md:px-12 py-4">
+                    <img
+                      class="inline-block"
+                      src="image/headphone.png"
+                      alt="table-logo"
+                    />
+                    luke
+                  </td>
+                  <td class="text-center px-6 py-4">$56.07</td>
+                  <td class="text-center px-6 py-4">$20.00</td>
+                  <td class="text-center px-6 py-4">66</td>
+                  <td class="text-center px-6 py-4">
+                    <span class="text-[#E2A03F]"
+                      ><i class="fa-solid fa-share"></i>
+                      Ads
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="md:px-12 py-4">
+                    <img
+                      class="inline-block"
+                      src="image/headphone.png"
+                      alt="table-logo"
+                    />
+                    luke
+                  </td>
+                  <td class="text-center px-6 py-4">$110.00</td>
+                  <td class="text-center px-6 py-4">$33.00</td>
+                  <td class="text-center px-6 py-4">35</td>
+                  <td class="text-center px-6 py-4">
+                    <span class="text-[#805DCA]"
+                      ><i class="fa-solid fa-share"></i>
+                      Email
+                    </span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="md:px-12 py-4">
+                    <img
+                      class="inline-block"
+                      src="image/headphone.png"
+                      alt="table-logo"
+                    />
+                    luke
+                  </td>
+                  <td class="text-center px-6 py-4">$56.07</td>
+                  <td class="text-center px-6 py-4">$20.00</td>
+                  <td class="text-center px-6 py-4">30</td>
+                  <td class="text-center px-6 py-4">
+                    <span class="text-[#4361EE]"
+                      ><i class="fa-solid fa-share"></i>
+                      Referral
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- recent order -->
+    <div class="container mx-auto text-text-color py-8 pl-4">
+      @ 2023. Vristo All rights reserved.
+    </div>
+    <!-- java script -->
+
+    <script src="script.js"></script>
+    <!-- java script -->
+  </body>
+</html>
