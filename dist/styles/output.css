@@ -598,26 +598,23 @@ video {
 
 /* sidber */
 
+.card {
+  box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
 .sidber {
   position: fixed;
-  bottom: 0px;
-  top: 0px;
-  width: 265px;
+  left: -260px;
+  height: 100vh;
+  width: 260px;
   overflow-y: auto;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-@media (min-width: 1024px) {
-  .sidber {
-    left: 0px;
-  }
-}
-
-.sidber {
-  display: none;
+  z-index: 50;
+  transition-duration: 500ms;
 }
 
 .software-name {
@@ -688,6 +685,8 @@ video {
 /* navber */
 
 .navber {
+  position: fixed;
+  z-index: 10;
   display: flex;
   width: 100%;
   justify-content: flex-end;
@@ -1157,16 +1156,8 @@ video {
   height: 480px;
 }
 
-.h-\[70\%\] {
-  height: 70%;
-}
-
 .h-\[70px\] {
   height: 70px;
-}
-
-.h-\[90\%\] {
-  height: 90%;
 }
 
 .w-3\/4 {
@@ -1490,6 +1481,10 @@ video {
 
 .pt-\[40px\] {
   padding-top: 40px;
+}
+
+.pt-\[8rem\] {
+  padding-top: 8rem;
 }
 
 .text-left {

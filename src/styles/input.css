@@ -3,15 +3,20 @@
 @tailwind utilities;
 /* components sidber*/
 @layer components {
- 
   /* sidber */
+
+  .card {
+    box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+  }
+
   .all {
     @apply w-[100%] flex;
   }
 
   .sidber {
-    @apply fixed bottom-0 top-0 bg-white  w-[265px] lg:left-0 overflow-y-auto drop-shadow-md;
-    @apply hidden;
+    @apply left-[-260px] fixed h-[100vh] bg-white  w-[260px]  overflow-y-auto drop-shadow-md;
+    @apply z-50 duration-500;
   }
 
   .software-name {
@@ -34,7 +39,7 @@
 
   /* navber */
   .navber {
-    @apply py-6 px-6 bg-slate-100 drop-shadow-md w-[100%] flex justify-end;
+    @apply py-6 px-6 bg-slate-100 drop-shadow-md w-[100%] flex justify-end fixed z-10;
   }
 
   .navber-icon {

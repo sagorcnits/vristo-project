@@ -35,86 +35,9 @@
     <!-- gooogle font -->
   </head>
   <body class="bg-[#F8F8F8] font-Nunito text-text-color">
-    <!-- navber F8F8F8-->
-    <nav class="navber">
-      <div class="mx-4 text-text-color">
-        <a class="text-[25px]" href="#"
-          ><i class="fa-solid fa-bars-staggered"></i
-        ></a>
-      </div>
-      <div class="container flex justify-end md:justify-between">
-        <!-- search ber -->
-        <div class="md:flex hidden">
-          <div class="navber-icon">
-            <a class="text-[25px]" href="#"
-              ><i class="fa-regular fa-calendar"></i
-            ></a>
-          </div>
-          <div class="navber-icon">
-            <a class="text-[25px]" href="#"
-              ><i class="fa-regular fa-pen-to-square"></i
-            ></a>
-          </div>
-          <div class="navber-icon">
-            <a class="text-[25px]" href="#"
-              ><i class="fa-solid fa-comment"></i
-            ></a>
-          </div>
-          <div class="search-ber">
-            <span class="ml-5 text-text-color"
-              ><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <input
-                type="text"
-                placeholder="Search"
-                class="bg-transparent focus:outline-none ml-2"
-              />
-            </span>
-          </div>
-        </div>
-        <!-- search ber -->
-        <!-- profile -->
-        <div class="flex justify-between">
-          <div class="md:flex hidden">
-            <div class="navber-icon">
-              <a class="text-[25px]" href="#"
-                ><i class="fa-solid fa-laptop"></i
-              ></a>
-            </div>
-            <div class="navber-icon">
-              <a href="#"
-                ><img
-                  class="w-[80%] block m-auto"
-                  src="image/country-logo.png"
-                  alt="country"
-              /></a>
-            </div>
-            <div class="navber-icon">
-              <a class="text-[25px]" href="#"
-                ><i class="fa-regular fa-envelope"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="navber-icon">
-            <a class="text-[25px]" href="#"
-              ><i class="fa-regular fa-bell"></i
-            ></a>
-          </div>
-          <div class="navber-icon">
-            <a class="text-[25px]" href="#"
-              ><img src="image/profile-logo.png" alt="profile"
-            /></a>
-          </div>
-        </div>
-        <!-- profile -->
-      </div>
-    </nav>
-
-    <!-- navber -->
-
-    <!-- sidber -->
+    <!-- sidebar -->
     <section class="sidber-section">
-      <div class="sidber scroll-ber">
+      <div class="sidber scroll-ber close">
         <!-- company name  -->
         <div class="software-name">
           <span class="ml-4">
@@ -124,7 +47,7 @@
               alt="tail"
             />VRISTO</span
           >
-          <span class="text-[12px]">
+          <span class="text-[12px] closebtn">
             <a href="#"><i class="fa-solid fa-angles-left"></i></a
           ></span>
         </div>
@@ -421,9 +344,86 @@
         </div>
       </div>
     </section>
-    <!-- sidber -->
+    <!-- sidebar -->
+    <!-- navber F8F8F8-->
+    <nav class="navber">
+      <div class="mx-4 text-text-color">
+        <a class="text-[25px] bar" href="#"
+          ><i class="fa-solid fa-bars-staggered"></i
+        ></a>
+      </div>
+      <div class="container flex justify-end md:justify-between">
+        <!-- search ber -->
+        <div class="md:flex hidden">
+          <div class="navber-icon">
+            <a class="text-[25px]" href="#"
+              ><i class="fa-regular fa-calendar"></i
+            ></a>
+          </div>
+          <div class="navber-icon">
+            <a class="text-[25px]" href="#"
+              ><i class="fa-regular fa-pen-to-square"></i
+            ></a>
+          </div>
+          <div class="navber-icon">
+            <a class="text-[25px]" href="#"
+              ><i class="fa-solid fa-comment"></i
+            ></a>
+          </div>
+          <div class="search-ber">
+            <span class="ml-5 text-text-color"
+              ><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              <input
+                type="text"
+                placeholder="Search"
+                class="bg-transparent focus:outline-none ml-2"
+              />
+            </span>
+          </div>
+        </div>
+        <!-- search ber -->
+        <!-- profile -->
+        <div class="flex justify-between">
+          <div class="md:flex hidden">
+            <div class="navber-icon">
+              <a class="text-[25px]" href="#"
+                ><i class="fa-solid fa-laptop"></i
+              ></a>
+            </div>
+            <div class="navber-icon">
+              <a href="#"
+                ><img
+                  class="w-[80%] block m-auto"
+                  src="image/country-logo.png"
+                  alt="country"
+              /></a>
+            </div>
+            <div class="navber-icon">
+              <a class="text-[25px]" href="#"
+                ><i class="fa-regular fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="navber-icon">
+            <a class="text-[25px]" href="#"
+              ><i class="fa-regular fa-bell"></i
+            ></a>
+          </div>
+          <div class="navber-icon">
+            <a class="text-[25px]" href="#"
+              ><img src="image/profile-logo.png" alt="profile"
+            /></a>
+          </div>
+        </div>
+        <!-- profile -->
+      </div>
+    </nav>
+
+    <!-- navber -->
+
     <!-- profit dashboard -->
-    <section class="section-sidber mb:pb-0">
+    <section class="section-sidber mb:pb-0 pt-[8rem]">
       <div class="pt-8 pb-8 px-4">
         <h1><span class="text-blue-500">Dashboard </span>/ sales</h1>
 
@@ -438,16 +438,15 @@
             <h1 class="pt-4 pb-4">
               Total Profit <span class="text-blue-500 ml-1"> $10,840</span>
             </h1>
-
-            <div class="h-[90%] w-[100%] rounded-lg">
-              <div id="profit" class="md:h-[400px] rounded-lg"></div>
+            <div class="card rounded-lg">
+              <div id="profit" class="md:h-[400px] w-[100%] rounded-lg"></div>
             </div>
           </div>
           <div
-            class="sales-cetagory md:col-span-1 bg-white mt-6 md:mt-0 rounded-lg"
+            class="sales-cetagory md:col-span-1 bg-white mt-6 md:mt-0 rounded-lg card"
           >
-            <h1 class="pt-4 pl-4">Sales By Cetagory</h1>
-            <div class="h-[70%] w-[100%]">
+            <div class="w-[100%]">
+              <h1 class="pt-4 pl-4">daily sales</h1>
               <div id="piechart" class="md:h-[400px]"></div>
             </div>
           </div>
@@ -458,7 +457,7 @@
     <!-- daily sales -->
     <section class="daily-sales md:mt-10 px-4 rounded-lg pb-[40px]">
       <div class="md:grid md:grid-cols-3 md:gap-10">
-        <div class="sales h-[350px] bg-white p-6 mt-10 rounded-lg">
+        <div class="sales h-[350px] bg-white p-6 mt-10 rounded-lg card">
           <ul class="flex justify-between pb-10">
             <span
               ><h1>Daily Sales</h1>
@@ -483,7 +482,7 @@
             <div class="w-4 h-[150px] bg-[#E0E6ED] sale6"></div>
           </div>
         </div>
-        <div class="sales h-[350px] bg-white p-6 mt-10 rounded-lg">
+        <div class="sales h-[350px] bg-white p-6 mt-10 rounded-lg card">
           <ul class="flex justify-between pb-10">
             <span><h1>Summary</h1> </span>
             <span
@@ -527,7 +526,7 @@
             </div>
           </ul>
         </div>
-        <div class="sales h-[350px] bg-white p-6 mt-10 rounded-lg">
+        <div class="sales h-[350px] bg-white p-6 mt-10 rounded-lg card">
           <ul class="flex justify-between pb-10">
             <div
               class="bg-[#E8F7EF] w-[40px] h-[40px] rounded-full flex justify-center items-center"
@@ -555,7 +554,7 @@
         class="md:grid md:grid-cols-3 md:gap-[30px] px-4 pt-[40px] text-text-color"
       >
         <!-- recent -->
-        <div class="h-[480px] py-4 px4 bg-white rounded-lg">
+        <div class="h-[480px] py-4 px4 bg-white rounded-lg card">
           <h1 class="py-4 px-4">Recent Activities</h1>
           <div class="recent overflow-y-auto h-[280px] px-4">
             <ul class="flex justify-between my-4">
@@ -642,7 +641,7 @@
         </div>
         <!-- recent -->
         <!-- trnasition -->
-        <div class="h-[480px] py-4 px4 bg-white rounded-lg mt-10 md:mt-0">
+        <div class="h-[480px] py-4 px4 bg-white rounded-lg mt-10 md:mt-0 card">
           <ul class="flex justify-between px-4 pt-4">
             <li>Transactions</li>
             <li>
@@ -742,7 +741,7 @@
         </div>
         <!-- trnasition -->
         <!-- wallet balance -->
-        <div class="h-[480px] px4 bg-white rounded-[10px] mt-10 md:mt-0">
+        <div class="h-[480px] px4 bg-white rounded-[10px] mt-10 md:mt-0 card">
           <!-- profile -->
           <div class="bg-grad">
             <div class="flex justify-between items-center pb-8">
@@ -846,7 +845,7 @@
     <!-- recent order -->
     <section class="mt-[30px] px-4 text-text-color">
       <div class="md:grid md:grid-cols-2 md:gap-8">
-        <div class="h-[470px] bg-white px-4">
+        <div class="h-[470px] bg-white px-4 card">
           <h1 class="py-8">Recent Orders</h1>
           <div class="h-[380px] overflow-auto">
             <table class="border-collapse border-slate-500 px-4 w-[100%]">
@@ -956,7 +955,7 @@
             </table>
           </div>
         </div>
-        <div class="h-[470px] bg-white px-4 mt-[20px] md:mt-0">
+        <div class="h-[470px] bg-white px-4 mt-[20px] md:mt-0 card">
           <h1 class="py-8">Top Selling Product</h1>
           <div class="h-[380px] overflow-auto">
             <table class="border-collapse border-slate-500 px-4 w-[100%]">
@@ -1083,6 +1082,7 @@
     <!-- java script -->
 
     <script src="script.js"></script>
+    <script src="event.js"></script>
     <!-- java script -->
   </body>
 </html>
